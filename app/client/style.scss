@@ -1,0 +1,122 @@
+#root {
+    .ui.fixed.menu, .ui[class*="top fixed"].menu {
+        position: relative;
+    }
+}
+
+// need to override semantic-ui item login dimension setting
+.ui.top.right.pointing.dropdown.login-link {
+    width: 75px;
+}
+
+.ui.top.right.pointing.dropdown.login-link .text {
+    padding-right: 10px;
+}
+
+// need to override semantic-ui item border bg setting
+.ui.inverted.menu .item:before {
+    background: none!important; 
+}
+// ---------------------------------
+// language dropdown
+.ui.selection.dropdown {
+    margin-right: 15px;
+    background-color: transparent!important;
+}
+
+.ui.fluid.dropdown {
+    width: 60%!important;
+}
+
+.ui.dropdown:not(.button) > .default.text, .ui.default.dropdown:not(.button) > .text {
+    color: rgba(255, 255, 255, 0.9)!important;
+}
+
+.ui.selection.dropdown {
+    color: rgba(255, 255, 255, 0.9)!important;
+}
+
+.ui.selection.active.dropdown .menu {
+    border-color: none!important;
+}
+
+// ----------------------------------
+// Navigation Bar
+.navbarWrapper {
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+.ui {
+    &.container {
+        position: relative;
+        top: 100px;
+    }
+}
+
+.ui {
+    &.top {
+        &.right {
+            &.pointing {
+                &.dropdown > .menu {
+                    width: 150px;
+                }
+            }
+        }
+    }
+}
+
+.reglog-submit-button {
+    .ui {
+        &.button {
+            background-color: #21BA45;
+            color: #fff;
+        }
+    }
+
+    width: 100%;
+    text-align: center;
+}
+
+.ui {
+    &.container {
+        &.ui {
+            .c2-logo {
+                border-radius: 0;
+            }
+        }
+    }
+}
+// ------------------------------
+// pricing columns on landingpage
+.ui {
+    &.pricing-btn {
+        &.fluid {
+            &.button {
+                background-color: #00B5AD;
+                color: #fff;
+            }
+        }
+    }
+}
+
+.wide {
+    &.column {
+        &.pricing-wrapper {
+            width: 350px;
+        }
+    }
+}
+
+.pricing-column {
+    width: 100%;
+}
+// -------------------------------
+/* Media breakpoints */
+@media only screen and (max-width: 767px) {
+    //language dropdown
+    .ui.fluid.dropdown {
+        width: 100%!important;
+    }
+}
